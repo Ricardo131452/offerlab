@@ -90,6 +90,20 @@ npm run typecheck            # tsc --noEmit
 
 > Windows 沙箱注意：npm 的 cache 必须指向工作区内，否则 `EPERM`；`next build` 需要能 spawn 子进程。
 
+## 部署（Vercel）
+
+本机没有你的 GitHub / Vercel 凭据，所以**这一步只能你自己跑**（三步，约 2 分钟）：
+
+```bash
+npm i -g vercel
+cd offerlab
+vercel --prod
+```
+
+- 环境变量在 Vercel 控制台 → Settings → Environment Variables 配置（不配则自动规则版）。
+- 三个 API 路由是 Node runtime，`unpdf` 无需额外系统依赖；无需配置 `maxDuration` 以外的参数。
+- `.env.local` 不会被提交（`.gitignore` 已排除），密钥不会进仓库。
+
 ## 已存在的验证
 
 - `tsc --noEmit` 通过；`next build` 通过。
