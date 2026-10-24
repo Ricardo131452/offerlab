@@ -73,8 +73,12 @@ function isLatin(alias: string): boolean {
 /** 长词优先 + 拉丁词做单词边界，避免 "go" 命中 "django"、"ts" 命中 "artifacts" */
 export function mentions(text: string, id: string): boolean {
   if (!text) return false;
-  const aliases = [id, ...(SKILL_BY_ID.get(id)?.aliases ?? [])];
+  const def = SKILL_BY_ID.get(id);
+  // 词的三种写法都要认：规范 id、别名、展示名（中文 label 若不参与匹配，
+  // 就会出现"简历写了「性能优化」却判为缺失"的荒谬结果）
+  const aliases = [id, ...(def?.aliases ?? []), ...(def ? [def.label] : [])];
   for (const alias of aliases) {
+    if (!alias) continue;
     if (isLatin(alias)) {
       const re = new RegExp(`(?<![a-z0-9])${escapeRegExp(alias)}(?![a-z0-9])`, "i");
       if (re.test(text)) return true;
