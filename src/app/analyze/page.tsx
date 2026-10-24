@@ -2,11 +2,14 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import { AdvicePanel } from "@/components/advice-panel";
+import { InterviewPanel } from "@/components/interview-panel";
 import { ReportView } from "@/components/report-view";
 import { SAMPLE_RESUME } from "@/data/sample-resume";
 import { buildAdvice, type Advice } from "@/lib/advice";
 import { loadJdSamples, parseJdText } from "@/lib/jd";
 import { matchResumeToJd } from "@/lib/match";
+import { saveImportedJd, saveRun } from "@/lib/store";
 import type { Jd, MatchReport } from "@/lib/types";
 
 interface Result {
@@ -64,6 +67,11 @@ export default function AnalyzePage() {
 
     const report = matchResumeToJd(resumeText, jd);
     setResult({ jd, report, advice: buildAdvice(jd, report) });
+
+    // 导入的 JD 落本地（同标题+同城市+同技能集合去重），喂给 /jobs 词频看板
+    if (jdMode === "paste") saveImportedJd(jd);
+    saveRun({ at: new Date().toISOString(), jdTitle: jd.title, score: report.score });
+
     requestAnimationFrame(() => document.getElementById("result")?.scrollIntoView({ behavior: "smooth" }));
   }
 
@@ -73,7 +81,12 @@ export default function AnalyzePage() {
         <Link href="/" className="font-display text-lg">
           Offer<span className="text-accent">Lab</span>
         </Link>
-        <span className="text-[11px] text-muted">证据级匹配 · 规则打分</span>
+        <div className="flex items-center gap-4">
+          <Link href="/jobs" className="text-[11px] text-muted transition-colors hover:text-accent">
+            岗位词频
+          </Link>
+          <span className="text-[11px] text-muted">证据级匹配 · 规则打分</span>
+        </div>
       </header>
 
       <div className="mt-8 grid gap-8 lg:grid-cols-[minmax(0,420px)_minmax(0,1fr)]">
@@ -181,9 +194,13 @@ export default function AnalyzePage() {
           {error && <p className="text-[12px] text-bad">{error}</p>}
         </div>
 
-        <div id="result">
+        <div id="result" className="space-y-6">
           {result ? (
-            <ReportView jd={result.jd} report={result.report} advice={result.advice} />
+            <>
+              <ReportView jd={result.jd} report={result.report} advice={result.advice} />
+              <AdvicePanel jd={result.jd} resumeText={resumeText} />
+              <InterviewPanel jd={result.jd} resumeText={resumeText} />
+            </>
           ) : (
             <div className="flex h-full min-h-[320px] items-center justify-center rounded-xl border border-line bg-ink-2/40 p-8 text-center text-[12px] leading-relaxed text-muted">
               报告会出现在这里：

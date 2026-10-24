@@ -30,12 +30,17 @@ export default function Home() {
         <span className="font-display text-lg tracking-tight">
           Offer<span className="text-accent">Lab</span>
         </span>
-        <Link
-          href="/analyze"
-          className="rounded-full border border-line px-4 py-1.5 text-sm text-fg transition-colors hover:border-accent hover:text-accent"
-        >
-          开始诊断
-        </Link>
+        <div className="flex items-center gap-4">
+          <Link href="/jobs" className="text-sm text-muted transition-colors hover:text-accent">
+            岗位词频
+          </Link>
+          <Link
+            href="/analyze"
+            className="rounded-full border border-line px-4 py-1.5 text-sm text-fg transition-colors hover:border-accent hover:text-accent"
+          >
+            开始诊断
+          </Link>
+        </div>
       </header>
 
       <section className="relative mx-auto grid max-w-6xl items-center gap-10 px-6 pt-10 pb-24 md:grid-cols-[1.1fr_0.9fr]">
