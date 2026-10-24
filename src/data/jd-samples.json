@@ -1,0 +1,82 @@
+[
+  {
+    "id": "cs-fe-01",
+    "title": "前端开发工程师",
+    "city": "长沙",
+    "seniority": "应届/初级",
+    "salary": "7-11K",
+    "source": "curated-sample",
+    "raw": "岗位职责：负责公司管理后台与官网开发；配合后端完成接口联调。任职要求：熟悉 React、TypeScript，能独立完成组件开发；掌握 HTML/CSS 基础；有 Vite 工程化经验；了解 Three.js 或动效者优先。",
+    "requirements": [["react", 3, true], ["typescript", 3, true], ["html", 2, true], ["vite", 2, false], ["three.js", 1, false], ["git", 2, true], ["perf", 1, false]]
+  },
+  {
+    "id": "sh-fe-visual",
+    "title": "Web 前端（可视化方向）",
+    "city": "上海",
+    "seniority": "1-3年",
+    "salary": "12-18K",
+    "source": "curated-sample",
+    "raw": "任职要求：精通 React 与 TypeScript；有 Three.js / WebGL 项目经验；熟悉数据可视化（ECharts）；能用 GSAP 实现滚动动效；对首屏性能优化有实践；加分项：Framer Motion。",
+    "requirements": [["react", 3, true], ["typescript", 3, true], ["three.js", 3, true], ["echarts", 2, true], ["gsap", 2, false], ["perf", 2, true], ["framer-motion", 1, false]]
+  },
+  {
+    "id": "sz-ai-app",
+    "title": "AI 应用开发工程师",
+    "city": "深圳",
+    "seniority": "应届/初级",
+    "salary": "10-16K",
+    "source": "curated-sample",
+    "raw": "岗位职责：基于大模型开发企业级 AI 应用。任职要求：熟悉 Python 与 FastAPI；有 RAG 检索增强实践经验，了解 Embedding 与向量检索（FAISS）；会写 Prompt 并做效果评估；了解 Docker 部署；有 LLM 应用落地经验优先。",
+    "requirements": [["python", 3, true], ["fastapi", 3, true], ["rag", 3, true], ["embedding", 3, true], ["faiss", 2, false], ["prompt", 2, true], ["llm", 3, true], ["docker", 1, false]]
+  },
+  {
+    "id": "hz-fullstack-next",
+    "title": "全栈开发工程师（Next.js）",
+    "city": "杭州",
+    "seniority": "1-3年",
+    "salary": "13-20K",
+    "source": "curated-sample",
+    "raw": "任职要求：精通 React / Next.js 与 TypeScript；熟悉 Node.js 服务端开发；掌握 PostgreSQL 与 SQL 优化；了解 Tailwind CSS；有 Vercel 部署经验；熟悉 Git 协作流程。",
+    "requirements": [["next.js", 3, true], ["react", 3, true], ["typescript", 3, true], ["node.js", 3, true], ["postgresql", 2, true], ["tailwind", 2, false], ["vercel", 1, false], ["git", 2, true]]
+  },
+  {
+    "id": "bj-llm-eng",
+    "title": "大模型应用工程师",
+    "city": "北京",
+    "seniority": "1-3年",
+    "salary": "15-25K",
+    "source": "curated-sample",
+    "raw": "任职要求：熟悉 LLM 应用开发，掌握 Agent / Function Calling 设计；有 LangChain 或 LlamaIndex 实践；理解 Prompt 工程与评测方法；熟悉 Python 与向量数据库；了解 PyTorch 者优先。",
+    "requirements": [["llm", 3, true], ["agent", 3, true], ["langchain", 2, true], ["prompt", 3, true], ["python", 3, true], ["embedding", 2, true], ["pytorch", 1, false]]
+  },
+  {
+    "id": "gz-backend",
+    "title": "后端开发工程师（Python）",
+    "city": "广州",
+    "seniority": "应届/初级",
+    "salary": "8-13K",
+    "source": "curated-sample",
+    "raw": "任职要求：熟悉 Python，掌握 FastAPI 或 Flask；熟悉 MySQL、Redis；了解 Linux 与 Nginx 部署；会使用 Docker；熟悉 Git；有高并发接口开发经验优先。",
+    "requirements": [["python", 3, true], ["fastapi", 2, true], ["flask", 2, false], ["mysql", 3, true], ["redis", 2, true], ["linux", 2, true], ["nginx", 1, false], ["docker", 2, true], ["git", 2, true]]
+  },
+  {
+    "id": "cs-data-assist",
+    "title": "数据分析助理",
+    "city": "长沙",
+    "seniority": "实习",
+    "salary": "3-5K",
+    "source": "curated-sample",
+    "raw": "岗位职责：协助完成业务数据分析与报表。任职要求：熟悉 Python 与 Pandas / NumPy；会写 SQL；能使用 ECharts 做可视化；有爬虫或数据采集经验优先；具备良好的沟通协作与文档写作能力。",
+    "requirements": [["python", 3, true], ["pandas", 3, true], ["numpy", 2, true], ["mysql", 2, true], ["echarts", 2, true], ["spider", 1, false], ["communication", 1, false], ["writing", 1, false]]
+  },
+  {
+    "id": "remote-fe-intern",
+    "title": "前端开发实习生（远程）",
+    "city": "远程",
+    "seniority": "实习",
+    "salary": "150-200/天",
+    "source": "curated-sample",
+    "raw": "任职要求：掌握 HTML/CSS 与 JavaScript 基础；熟悉 React；了解 Tailwind CSS；会用 Git 提交代码；能写单元测试者优先；每周可投入 4 天以上。",
+    "requirements": [["html", 2, true], ["javascript", 3, true], ["react", 2, true], ["tailwind", 1, false], ["git", 2, true], ["testing", 1, false]]
+  }
+]

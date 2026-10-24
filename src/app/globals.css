@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+/*
+ * 设计约定（保持克制）：
+ * - 深色底 + 单一强调色，动效只服务信息层级，不做装饰性炫技；
+ * - 颜色语义化：证据强/弱/缺失 三级，直接对应报告结论。
+ */
+@theme {
+  --color-ink: #08090c;
+  --color-ink-2: #101218;
+  --color-line: #23262f;
+  --color-fg: #eceef4;
+  --color-muted: #9aa1b1;
+  --color-accent: #c8ff4d;
+  --color-good: #4ade80;
+  --color-warn: #f6c65b;
+  --color-bad: #ff6b6b;
+  --font-display: "Archivo Black", "Noto Sans SC", system-ui, sans-serif;
+  --font-sans: "IBM Plex Sans", "Noto Sans SC", system-ui, sans-serif;
+}
+
+html,
+body {
+  background: var(--color-ink);
+  color: var(--color-fg);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: #08090c;
+}
+
+/* 细网格底纹：给 3D 一个"技术感"的底，不抢内容 */
+.grid-bg {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(ellipse at 50% 0%, #000 40%, transparent 78%);
+}
