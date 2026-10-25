@@ -1,12 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { AdvicePanel } from "@/components/advice-panel";
 import { InterviewPanel } from "@/components/interview-panel";
 import { ReportView } from "@/components/report-view";
 import { SAMPLE_RESUME } from "@/data/sample-resume";
 import { buildAdvice, type Advice } from "@/lib/advice";
+import { authHeader, captureTokenFromUrl } from "@/lib/client-stream";
 import { loadJdSamples, parseJdText } from "@/lib/jd";
 import { matchResumeToJd } from "@/lib/match";
 import { saveImportedJd, saveRun } from "@/lib/store";
@@ -29,6 +30,11 @@ export default function AnalyzePage() {
   const [error, setError] = useState<string | null>(null);
   const [fileInfo, setFileInfo] = useState<string | null>(null);
 
+  // 部署后若配置了访问令牌，用户用 ?t=<token> 打开一次即可（存在 localStorage）
+  useEffect(() => {
+    captureTokenFromUrl();
+  }, []);
+
   async function handleFile(file: File) {
     setBusy(true);
     setError(null);
@@ -36,7 +42,7 @@ export default function AnalyzePage() {
     try {
       const fd = new FormData();
       fd.append("file", file);
-      const res = await fetch("/api/resume", { method: "POST", body: fd });
+      const res = await fetch("/api/resume", { method: "POST", body: fd, headers: authHeader() });
       const data = (await res.json()) as { text?: string; pages?: number; chars?: number; error?: string };
       if (!res.ok || !data.text) throw new Error(data.error ?? "解析失败");
       setResumeText(data.text);
@@ -134,7 +140,7 @@ export default function AnalyzePage() {
               value={resumeText}
               onChange={(e) => setResumeText(e.target.value)}
               placeholder="把简历正文粘贴到这里…"
-              className="mt-2 h-40 w-full resize-y rounded-lg border border-line bg-ink p-3 text-[12px] leading-relaxed outline-none focus:border-accent/60"
+              className="mt-2 h-56 w-full resize-y rounded-lg border border-line bg-ink p-3 text-[12px] leading-relaxed outline-none focus:border-accent/60"
             />
             <p className="mt-1 text-[11px] text-muted">当前 {resumeText.length} 字</p>
           </section>

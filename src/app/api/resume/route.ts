@@ -1,4 +1,5 @@
 import { extractText, getDocumentProxy } from "unpdf";
+import { guard } from "@/lib/guard";
 
 /**
  * 简历解析接口：文件只在内存里过一遍，不落盘、不入库。
@@ -11,6 +12,9 @@ export const maxDuration = 30;
 const MAX_BYTES = 5 * 1024 * 1024;
 
 export async function POST(req: Request) {
+  const blocked = guard(req, { scope: "resume", limit: 10 });
+  if (blocked) return blocked;
+
   let form: FormData;
   try {
     form = await req.formData();

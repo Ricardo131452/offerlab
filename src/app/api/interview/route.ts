@@ -1,5 +1,6 @@
 import { TEXT_HEADERS, parseBody, toJd, zInterviewBody } from "@/lib/api-schema";
 import { getLlmConfig, streamChat, type ChatMessage } from "@/lib/llm";
+import { guard } from "@/lib/guard";
 import { matchResumeToJd } from "@/lib/match";
 import { buildInterviewMessages } from "@/lib/prompt";
 
@@ -13,6 +14,9 @@ function fallbackQuestion(jdTitle: string, midLabels: string[], weakLabels: stri
 }
 
 export async function POST(req: Request) {
+  const blocked = guard(req, { scope: "interview", limit: 30 });
+  if (blocked) return blocked;
+
   let raw: unknown;
   try {
     raw = await req.json();

@@ -1,6 +1,7 @@
 import { TEXT_HEADERS, parseBody, toJd, zAdviseBody } from "@/lib/api-schema";
 import { buildAdvice } from "@/lib/advice";
 import { getLlmConfig, streamChat, type ChatMessage } from "@/lib/llm";
+import { guard } from "@/lib/guard";
 import { buildAdviceMessages } from "@/lib/prompt";
 import { matchResumeToJd } from "@/lib/match";
 
@@ -18,6 +19,9 @@ function fallbackText(headline: string, gaps: string[], templates: string[], war
 }
 
 export async function POST(req: Request) {
+  const blocked = guard(req, { scope: "advise", limit: 20 });
+  if (blocked) return blocked;
+
   let raw: unknown;
   try {
     raw = await req.json();

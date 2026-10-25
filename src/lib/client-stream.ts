@@ -1,3 +1,29 @@
+/**
+ * 客户端访问令牌：部署时若配置了 API_ACCESS_TOKEN，用户用 `?t=<token>` 打开一次，
+ * 令牌存 localStorage，后续请求自动带上。不放 env 里是因为 NEXT_PUBLIC_* 会打进 JS 包。
+ */
+const TOKEN_KEY = "offerlab.token";
+
+export function authHeader(): Record<string, string> {
+  if (typeof window === "undefined") return {};
+  try {
+    const token = window.localStorage.getItem(TOKEN_KEY);
+    return token ? { "x-access-token": token } : {};
+  } catch {
+    return {};
+  }
+}
+
+export function captureTokenFromUrl(): void {
+  if (typeof window === "undefined") return;
+  try {
+    const token = new URLSearchParams(window.location.search).get("t");
+    if (token) window.localStorage.setItem(TOKEN_KEY, token);
+  } catch {
+    /* 忽略隐私模式下的存储异常 */
+  }
+}
+
 /** 客户端流式读取：把 POST 的响应体逐块推给回调。不依赖 EventSource，因为要 POST + JSON。 */
 export async function streamText(
   url: string,
@@ -7,7 +33,7 @@ export async function streamText(
 ): Promise<string> {
   const res = await fetch(url, {
     method: "POST",
-    headers: { "content-type": "application/json" },
+    headers: { "content-type": "application/json", ...authHeader() },
     body: JSON.stringify(body),
     signal,
   });

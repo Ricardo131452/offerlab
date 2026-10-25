@@ -18,8 +18,13 @@ export interface Advice {
   formatWarnings: string[];
 }
 
-function bandOf(score: number): Band {
+/**
+ * 分档必须先看硬性覆盖率：硬性全中但分数 54 时说"缺 0 项所以先补项目"是自相矛盾的。
+ * 硬性全中 → 最差也是 tune（可以改一改就投）。
+ */
+function bandOf(score: number, mustScore: number): Band {
   if (score >= 75) return "go";
+  if (mustScore === 1 && score >= 45) return "tune";
   if (score >= 60) return "tune";
   if (score >= 45) return "build";
   return "pivot";
@@ -28,8 +33,13 @@ function bandOf(score: number): Band {
 const HEADLINE: Record<Band, (j: Jd, r: MatchReport) => string> = {
   go: (j, r) => `匹配度 ${r.score} 分，硬性要求命中 ${r.mustHit}/${r.mustTotal}：这个岗位现在就可以投，重点是把强证据往前放。`,
   tune: (j, r) =>
-    `匹配度 ${r.score} 分：方向对，但 ${r.weak.length} 项技能只有名字没有证据。改完这几条再投，回复率差别很大。`,
-  build: (j, r) => `匹配度 ${r.score} 分：硬性要求缺 ${r.mustTotal - r.mustHit} 项，建议先补一个能演示的小项目，而不是继续投。`,
+    `匹配度 ${r.score} 分，硬性要求全中（${r.mustHit}/${r.mustTotal}）：可以投，但 ${r.weak.length + r.mid.length} 项技能缺"结果"这一口气，改完再投更稳。`,
+  build: (j, r) => {
+    const missing = r.mustTotal - r.mustHit;
+    return missing > 0
+      ? `匹配度 ${r.score} 分，硬性要求缺 ${missing} 项：先补一个能演示的小项目，比继续投更有用。`
+      : `匹配度 ${r.score} 分：硬性要求都命中了，但证据偏薄，建议把 2~3 条经历补出数字再投。`;
+  },
   pivot: (j, r) => `匹配度 ${r.score} 分：这个岗位和当前简历差距过大，投递大概率石沉大海——换一个更接近的方向更省时间。`,
 };
 
@@ -47,7 +57,7 @@ function rewriteTemplate(jdTitle: string): string {
 }
 
 export function buildAdvice(jd: Jd, report: MatchReport): Advice {
-  const band = bandOf(report.score);
+  const band = bandOf(report.score, report.mustScore);
   const formatWarnings: string[] = [];
 
   if (report.parseStats.projectBlocks < 3) {

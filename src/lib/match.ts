@@ -14,8 +14,14 @@ const SECTION_SKILLS = /(专业技能|技能清单|技能特长|技术栈|掌握
 const SECTION_PROJECTS = /(项目经历|项目经验|实习经历|工作经历|实践经历|主要项目|项目实践|校园经历)/;
 const SECTION_END = /(教育背景|教育经历|获奖情况|荣誉证书|自我评价|自我描述|求职意向|个人信息)/;
 
-/** 量化信号：数字 + 单位，代表"有结果"而不是"我做过" */
-const QUANT = /\d+(\.\d+)?\s*(%|％|条|次|个|万|w|ms|毫秒|秒|人|类|项|家|轮|qps|QPS)/;
+/**
+ * 量化信号：数字 + 单位，代表"有结果"而不是"我做过"。
+ * 单位白名单是从真实简历里长的，不是拍脑袋：中文简历里最常见的是
+ * 张/组/行/页/处/项/条/篇/套/级/倍/类/人/个/次/万/%/ms/秒…
+ * 少一个单位，就会把"5 张数据表"这种实打实的结果误判成"没量化"。
+ */
+const QUANT =
+  /\d+(\.\d+)?\s*(%|％|条|次|个|万|w|ms|毫秒|秒|人|类|项|家|轮|qps|QPS|张|组|行|页|处|篇|套|级|倍|名|位|款|种|台|块|层|小时|分钟|天|周)/;
 
 export interface ResumeSections {
   skills: string;
@@ -93,18 +99,37 @@ function linesMentioning(lines: string[], id: string): string[] {
   return lines.filter((line) => mentions(line, id));
 }
 
+/**
+ * 证据摘录：以技能词为中心截取上下文，而不是把整行甩给用户。
+ * 否则 React / TypeScript / Vite 出现在同一行时，四张卡会显示同一句话——像复读机。
+ */
+function snippet(line: string, id: string): string {
+  const def = SKILL_BY_ID.get(id);
+  const terms = [id, ...(def?.aliases ?? []), ...(def ? [def.label] : [])].filter(Boolean);
+  const lower = line.toLowerCase();
+  let idx = -1;
+  for (const t of terms) {
+    const i = lower.indexOf(t.toLowerCase());
+    if (i >= 0 && (idx === -1 || i < idx)) idx = i;
+  }
+  if (idx === -1) return line.slice(0, 80);
+  const start = Math.max(0, idx - 20);
+  const end = Math.min(line.length, idx + 58);
+  return `${start > 0 ? "…" : ""}${line.slice(start, end)}${end < line.length ? "…" : ""}`;
+}
+
 function gradeEvidence(id: string, sections: ResumeSections): { level: EvidenceLevel; evidence: string[] } {
   const projectHits = linesMentioning(sections.projectBlocks, id);
   if (projectHits.length > 0) {
     const quantified = projectHits.some((line) => QUANT.test(line));
     return {
       level: quantified ? 3 : 2,
-      evidence: projectHits.slice(0, 3).map((l) => l.slice(0, 120)),
+      evidence: [...new Set(projectHits.map((l) => snippet(l, id)))].slice(0, 3),
     };
   }
   const skillHits = linesMentioning(sections.lines, id);
   if (skillHits.length > 0) {
-    return { level: 1, evidence: skillHits.slice(0, 3).map((l) => l.slice(0, 120)) };
+    return { level: 1, evidence: [...new Set(skillHits.map((l) => snippet(l, id)))].slice(0, 3) };
   }
   return { level: 0, evidence: [] };
 }
