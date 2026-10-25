@@ -1,5 +1,7 @@
 # OfferLab
 
+[![CI](https://github.com/Ricardo131452/offerlab/actions/workflows/ci.yml/badge.svg)](https://github.com/Ricardo131452/offerlab/actions/workflows/ci.yml)
+
 > 简历 × JD 的**证据级**匹配：不看关键词出现过没有，只看它**被证明到什么程度**。
 
 ## 它解决什么问题
