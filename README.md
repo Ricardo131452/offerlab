@@ -90,19 +90,42 @@ npm run typecheck            # tsc --noEmit
 
 > Windows 沙箱注意：npm 的 cache 必须指向工作区内，否则 `EPERM`；`next build` 需要能 spawn 子进程。
 
-## 部署（Vercel）
+## 部署（不依赖 Vercel）
 
-本机没有你的 GitHub / Vercel 凭据，所以**这一步只能你自己跑**（三步，约 2 分钟）：
+Vercel 对新账号做手机号风控，国内号码基本过不了。所以本项目用 `output: "standalone"` + `Dockerfile`，**任何能跑 Node 或 Docker 的平台都能部署**。
+
+| 平台 | 是否需要手机号 | 难度 | 备注 |
+|---|---|---|---|
+| **Hugging Face Spaces**（Docker） | 否，邮箱注册即可 | 低 | 永久域名 `https://<用户名>-<space>.huggingface.co`，免费 CPU 够用 |
+| **Render**（Docker / Blueprint） | 否，GitHub 登录 | 低 | 仓库里有 `render.yaml`，连上仓库即自动建服务 |
+| Railway / Zeabur | 否 | 低 | 免费额度小，可能要求绑卡 |
+| 阿里云 / 腾讯云 | 实名 | 中 | 长期最稳，但备案要 2~3 周 |
+| Vercel | **是**（风控） | 低 | 有国外号码才顺 |
+
+三种部署方式，任选其一：
 
 ```bash
-npm i -g vercel
-cd offerlab
+# 1) 本机验证 standalone 产物（等价于线上行为）
+npm run build
+mkdir -p .next/standalone/.next && cp -r public .next/standalone/public
+cp -r .next/static .next/standalone/.next/static
+cd .next/standalone && PORT=3200 node server.js
+
+# 2) Docker（Render / HF Spaces / 任意云主机都吃这个）
+docker build -t offerlab . && docker run -p 3000:3000 offerlab
+
+# 3) Vercel（有国外号码时）
 vercel --prod
 ```
 
-- 环境变量在 Vercel 控制台 → Settings → Environment Variables 配置（不配则自动规则版）。
-- 三个 API 路由是 Node runtime，`unpdf` 无需额外系统依赖；无需配置 `maxDuration` 以外的参数。
-- `.env.local` 不会被提交（`.gitignore` 已排除），密钥不会进仓库。
+环境变量（不配则自动规则版，功能完整）：
+
+| 变量 | 作用 |
+|---|---|
+| `LLM_API_KEY` / `LLM_BASE_URL` / `LLM_MODEL` | 开启模型版改写与面试 |
+| `API_ACCESS_TOKEN` | 开启接口鉴权，访问时用 `?t=<token>` 打开一次 |
+
+`.env.local` 已在 `.gitignore` 里，密钥不会进仓库。
 
 ## 已存在的验证
 

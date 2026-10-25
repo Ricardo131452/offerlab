@@ -1,0 +1,17 @@
+# Render Blueprint：连上仓库即可一键起服务（无需手机号）
+services:
+  - type: web
+    name: offerlab
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: LLM_API_KEY
+        sync: false
+      - key: LLM_BASE_URL
+        value: https://api.deepseek.com/v1
+      - key: LLM_MODEL
+        value: deepseek-chat
+      - key: API_ACCESS_TOKEN
+        sync: false
