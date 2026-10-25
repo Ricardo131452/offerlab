@@ -129,10 +129,12 @@ vercel --prod
 
 ## 已存在的验证
 
-- `tsc --noEmit` 通过；`next build` 通过。
-- 匹配引擎 12 条断言全过：确定性、分数区间、硬性覆盖、缺失项识别、证据等级、单调性（补量化证据后 54→71）、四档划分互斥完备、`django` 不误命中 `go`。
+- `npm test`：**11 条引擎/建议断言**（node:test，已进仓库，CI 会跑）——确定性、区间、四档互斥完备、缺失识别、证据等级、单调性、中文量化单位、`django` 不误命中 `go`、证据片段不重复、分档文案不自相矛盾、词表外技能不计分。
+- `tsc --noEmit` 通过；`next build` 通过；`output: standalone` 产物在 3200 端口实测 6 项全通过。
+- GitHub Actions：`.github/workflows/ci.yml` —— push 即跑 类型检查 → 单测 → 构建。
 - 真实冒烟：`/`、`/analyze`、`/jobs` 返回 200；`POST /api/resume` 正确抽文本；`POST /api/advise`、`POST /api/interview` 在无 Key 下返回规则版文本。
 - 流式链路用本地 mock 的 OpenAI 兼容服务验证：能按 chunk 增量到达，`x-llm-mode: model`。
+- 端到端（puppeteer-core + 系统 Edge 无头）：主流程 13 项、3D 门面 7 项全过。
 
 ## 已知限制（诚实清单）
 

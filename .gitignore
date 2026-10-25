@@ -13,3 +13,6 @@ npm-debug.log*
 .env*
 !.env.example
 tsconfig.tsbuildinfo
+
+# test build output
+/.test-build/
