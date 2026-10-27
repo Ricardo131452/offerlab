@@ -31,6 +31,9 @@ export default function Home() {
           Offer<span className="text-accent">Lab</span>
         </span>
         <div className="flex items-center gap-4">
+          <Link href="/dashboard" className="text-sm text-muted transition-colors hover:text-accent">
+            招聘看板
+          </Link>
           <Link href="/jobs" className="text-sm text-muted transition-colors hover:text-accent">
             岗位词频
           </Link>

@@ -1,0 +1,1296 @@
+{
+ "meta": {
+  "source": "2026 届校园双选会第一批通过企业名单 + 学生企业信息一览表",
+  "companies": 131,
+  "withJobs": 20,
+  "jobs": 29,
+  "note": "真实校招数据，非爬取；薪资为区间中位数估算，仅用于对比"
+ },
+ "companies": [
+  {
+   "name": "广西华科扬创科技有限公司",
+   "contact": "樊静",
+   "phone": "18977282859",
+   "region": "柳州",
+   "jobs": [
+    {
+     "title": "外企实习生",
+     "headcount": 50,
+     "major": "机电一体化、电子信息等",
+     "address": "广西柳州市鱼峰区花岭工业园区",
+     "internPay": "4000-4500/月",
+     "regularPay": "五险一金、通勤厂车、年终奖等",
+     "type": "其他",
+     "region": "柳州",
+     "internPayValue": 4250,
+     "regularPayValue": null
+    },
+    {
+     "title": "AGV 运维技术员",
+     "headcount": 3,
+     "major": "机电一体化、电子信息等",
+     "address": "广西柳州市鱼峰区花岭工业园区",
+     "internPay": "4000-4500/月",
+     "regularPay": "五险一金、通勤厂车、年终奖等",
+     "type": "自动化/电气",
+     "region": "柳州",
+     "internPayValue": 4250,
+     "regularPayValue": null
+    },
+    {
+     "title": "新媒体专员",
+     "headcount": 5,
+     "major": "市场营销、工商管理、人力资源、物联网工程等",
+     "address": "广西柳州市鱼峰区花岭工业园区",
+     "internPay": "2500-3000/月",
+     "regularPay": "五险、工龄补贴、交通补贴、学历补贴等",
+     "type": "运营/客服/销售",
+     "region": "柳州",
+     "internPayValue": 2750,
+     "regularPayValue": null
+    },
+    {
+     "title": "项目人事驻场",
+     "headcount": 5,
+     "major": "工商管理、人力资源等",
+     "address": "广西柳州市鱼峰区花岭工业园区",
+     "internPay": "2500-3000/月",
+     "regularPay": "五险、工龄补贴、交通补贴、学历补贴等",
+     "type": "其他",
+     "region": "柳州",
+     "internPayValue": 2750,
+     "regularPayValue": null
+    },
+    {
+     "title": "人力资源实习生",
+     "headcount": 5,
+     "major": "工商管理、人力资源等",
+     "address": "广西柳州市鱼峰区花岭工业园区",
+     "internPay": "2500-3000/月",
+     "regularPay": "五险、工龄补贴、交通补贴、学历补贴等",
+     "type": "其他",
+     "region": "柳州",
+     "internPayValue": 2750,
+     "regularPayValue": null
+    }
+   ]
+  },
+  {
+   "name": "湖南甲骨文教育科技有限公司",
+   "contact": "",
+   "phone": "",
+   "region": "长沙",
+   "jobs": [
+    {
+     "title": "在线客服",
+     "headcount": 50,
+     "major": "不限",
+     "address": "湖南省长沙市望城区AIGC产业园",
+     "internPay": "2000-2400",
+     "regularPay": "4000-5000",
+     "type": "运营/客服/销售",
+     "region": "长沙",
+     "internPayValue": 2200,
+     "regularPayValue": 4500
+    },
+    {
+     "title": "自动驾驶标注工程师实习生",
+     "headcount": 15,
+     "major": "计算机相关专业",
+     "address": "",
+     "internPay": "2000-3000",
+     "regularPay": "4000-6000",
+     "type": "标注/数据",
+     "region": "其他",
+     "internPayValue": 2500,
+     "regularPayValue": 5000
+    },
+    {
+     "title": "具身大模型标注实习生",
+     "headcount": 30,
+     "major": "计算机相关专业",
+     "address": "",
+     "internPay": "2000-3000",
+     "regularPay": "4000-6000",
+     "type": "标注/数据",
+     "region": "其他",
+     "internPayValue": 2500,
+     "regularPayValue": 5000
+    },
+    {
+     "title": "机器视觉应用工程师",
+     "headcount": 20,
+     "major": "计算机相关专业",
+     "address": "",
+     "internPay": "4000-6000",
+     "regularPay": "7000-9000",
+     "type": "视觉/算法",
+     "region": "其他",
+     "internPayValue": 5000,
+     "regularPayValue": 8000
+    }
+   ]
+  },
+  {
+   "name": "湖南好课优选教育科技有限公司",
+   "contact": "马子俨",
+   "phone": "18156248944",
+   "region": "长沙",
+   "jobs": [
+    {
+     "title": "新媒体运营",
+     "headcount": 20,
+     "major": "计算同网络技术、信息安全技术应用、大数据技术 、",
+     "address": "湖南省长沙市岳麓区万为科技产业园",
+     "internPay": "3500元/月",
+     "regularPay": "4000+提成",
+     "type": "运营/客服/销售",
+     "region": "长沙",
+     "internPayValue": 3500,
+     "regularPayValue": 4000
+    },
+    {
+     "title": "课程顾问",
+     "headcount": 20,
+     "major": "计算同网络技术、信息安全技术应用、大数据技术 、",
+     "address": "湖南省长沙市岳麓区万为科技产业园",
+     "internPay": "3500元/月",
+     "regularPay": "4000+提成",
+     "type": "运营/客服/销售",
+     "region": "长沙",
+     "internPayValue": 3500,
+     "regularPayValue": 4000
+    }
+   ]
+  },
+  {
+   "name": "湖南宽海智能装备有限公司",
+   "contact": "",
+   "phone": "",
+   "region": "长沙",
+   "jobs": [
+    {
+     "title": "软件工程师",
+     "headcount": 5,
+     "major": "软件技术",
+     "address": "长沙市雨花区",
+     "internPay": "2000元/月",
+     "regularPay": "综合薪资4500-6500（首年）周末双休、法定节假日",
+     "type": "软件开发",
+     "region": "长沙",
+     "internPayValue": 2000,
+     "regularPayValue": 5500
+    },
+    {
+     "title": "电气工程师",
+     "headcount": 3,
+     "major": "机械制造及自动化",
+     "address": "",
+     "internPay": "",
+     "regularPay": "",
+     "type": "自动化/电气",
+     "region": "其他",
+     "internPayValue": null,
+     "regularPayValue": null
+    }
+   ]
+  },
+  {
+   "name": "上海强然数码科技有限公司",
+   "contact": "易雪丽",
+   "phone": "18907136107",
+   "region": "上海",
+   "jobs": [
+    {
+     "title": "档案管理员",
+     "headcount": 30,
+     "major": "计算机相关专业",
+     "address": "徐汇区宜山路兆丰环球大厦25楼A上海强然数码科技有限公司",
+     "internPay": "综合：3000-7000，底薪2540+绩效+中餐补贴",
+     "regularPay": "",
+     "type": "其他",
+     "region": "上海",
+     "internPayValue": 4180,
+     "regularPayValue": null
+    }
+   ]
+  },
+  {
+   "name": "宜欣科技（嘉善）有限公司",
+   "contact": "郑思怡",
+   "phone": "18270666072",
+   "region": "嘉善",
+   "jobs": [
+    {
+     "title": "设备、测试、工艺技术员实习生",
+     "headcount": 50,
+     "major": "人工智能技术应用、软件技术、计算机网络技术、大数据技术",
+     "address": "浙江省嘉兴市嘉善县惠民街道晋吉路88号",
+     "internPay": "5-6k，包食宿",
+     "regularPay": "6-9k",
+     "type": "测试",
+     "region": "嘉善",
+     "internPayValue": 5500,
+     "regularPayValue": 7500
+    }
+   ]
+  },
+  {
+   "name": "德昌电机（江门）有限公司",
+   "contact": "肖宇",
+   "phone": "13189090005",
+   "region": "深圳",
+   "jobs": [
+    {
+     "title": "实习生（技术类）",
+     "headcount": 30,
+     "major": "工业机器人技术、机械制造及自动化、新能源汽车技术、大数据技术（非对口专业未招聘）",
+     "address": "深圳市宝安区新桥街道象山社区新发南路6号德昌工业园",
+     "internPay": "约6000元/月\n餐补300元/月\n全勤100元/月",
+     "regularPay": "约7000元/月\n餐补300元/月\n全勤100元/月",
+     "type": "其他",
+     "region": "深圳",
+     "internPayValue": 2133,
+     "regularPayValue": 2466
+    }
+   ]
+  },
+  {
+   "name": "才众电脑（深圳）有限公司",
+   "contact": "肖肖",
+   "phone": "19849429886",
+   "region": "深圳",
+   "jobs": [
+    {
+     "title": "SMT技术员、质量检验员",
+     "headcount": 30,
+     "major": "不限",
+     "address": "广东省深圳市盐田区保税区深盐路2015号",
+     "internPay": "实习期综合薪资5800元左右",
+     "regularPay": "7000-9000元",
+     "type": "产线/技术员",
+     "region": "深圳",
+     "internPayValue": 5800,
+     "regularPayValue": 8000
+    }
+   ]
+  },
+  {
+   "name": "智元创新（上海）科技股份有限公司",
+   "contact": "马专员",
+   "phone": "15927578974",
+   "region": "上海",
+   "jobs": [
+    {
+     "title": "数据采集/标注",
+     "headcount": 50,
+     "major": "计算机应用、大数据、机器人、机电、机械、人工智能相关专业优先",
+     "address": "上海市浦东新区秀浦路2555号29幢8层",
+     "internPay": "5500-6500",
+     "regularPay": "8000+",
+     "type": "标注/数据",
+     "region": "上海",
+     "internPayValue": 6000,
+     "regularPayValue": 8000
+    }
+   ]
+  },
+  {
+   "name": "杭州四喜信息技术有限公司",
+   "contact": "符元祥",
+   "phone": "18668027197",
+   "region": "杭州",
+   "jobs": [
+    {
+     "title": "运营专员、电商顾问",
+     "headcount": 20,
+     "major": "计算机类",
+     "address": "杭州市西湖区西园八路十一号B座5楼",
+     "internPay": "运营试用期3500+住宿；电商顾问4500+住宿",
+     "regularPay": "运营：4000+绩效；4200保底+绩效",
+     "type": "运营/客服/销售",
+     "region": "杭州",
+     "internPayValue": 4000,
+     "regularPayValue": 4100
+    }
+   ]
+  },
+  {
+   "name": "武汉皓榕科技有限公司",
+   "contact": "",
+   "phone": "",
+   "region": "武汉",
+   "jobs": [
+    {
+     "title": "海康威视生产储备岗位",
+     "headcount": 30,
+     "major": "计算机网络技术，软件技术，数据技术",
+     "address": "湖北省武汉市江夏区纸坊街道榕成街1号",
+     "internPay": "5000-7000元/月",
+     "regularPay": "7000-1000元/月",
+     "type": "产线/技术员",
+     "region": "武汉",
+     "internPayValue": 6000,
+     "regularPayValue": 4000
+    }
+   ]
+  },
+  {
+   "name": "浙江大华智联有限公司",
+   "contact": "陈壮",
+   "phone": "15052749273",
+   "region": "杭州",
+   "jobs": [
+    {
+     "title": "见习工程师",
+     "headcount": 35,
+     "major": "人工智能、软件、计算机网络、大数据、机械、工业机器人、无人机、新能源",
+     "address": "浙江省杭州市",
+     "internPay": "5500-7500",
+     "regularPay": "7500-10000元/月",
+     "type": "软件开发",
+     "region": "杭州",
+     "internPayValue": 6500,
+     "regularPayValue": 8750
+    }
+   ]
+  },
+  {
+   "name": "湖南华视坐标传媒动画有限公司",
+   "contact": "陈翠",
+   "phone": "18173119131",
+   "region": "其他",
+   "jobs": [
+    {
+     "title": "AI动画实习生",
+     "headcount": 10,
+     "major": "动漫制作技术",
+     "address": "湖南涉外经济学院九食堂二楼",
+     "internPay": "面试通过可以免费参与公司项目实训三个月，表现优秀的同学在第四个月有1.5-2K的实训生活保障费用。",
+     "regularPay": "按项目计件，多劳多得。一般转正第一年薪资范围3-4千之间。",
+     "type": "建模/设计",
+     "region": "其他",
+     "internPayValue": 1750,
+     "regularPayValue": null
+    }
+   ]
+  },
+  {
+   "name": "湖南知了教育科技有限公司",
+   "contact": "戴红娟",
+   "phone": "15773178716",
+   "region": "其他",
+   "jobs": [
+    {
+     "title": "三维建模师、游戏设计师",
+     "headcount": 15,
+     "major": "动漫制作技术",
+     "address": "湖南湘江新区黄金园街道普瑞大道一段1555号金桥市场集群2区4栋21层2114号",
+     "internPay": "面议",
+     "regularPay": "面议",
+     "type": "建模/设计",
+     "region": "其他",
+     "internPayValue": null,
+     "regularPayValue": null
+    }
+   ]
+  },
+  {
+   "name": "珠海光库科技股份有限公司",
+   "contact": "仇佳木",
+   "phone": "13272124031",
+   "region": "珠海",
+   "jobs": [
+    {
+     "title": "软件测试、产品工艺组装",
+     "headcount": 30,
+     "major": "计算同网络技术、信息安全技术应用、大数据技术 、",
+     "address": "广东省珠海市高新区唐家湾镇创新三路399号",
+     "internPay": "5500-7000元/月，包吃",
+     "regularPay": "",
+     "type": "测试",
+     "region": "珠海",
+     "internPayValue": 6250,
+     "regularPayValue": null
+    }
+   ]
+  },
+  {
+   "name": "甬矽电子（宁波）股份有限公司",
+   "contact": "",
+   "phone": "",
+   "region": "宁波",
+   "jobs": [
+    {
+     "title": "设备技术、工艺技术、质量技术、储备干部",
+     "headcount": 120,
+     "major": "计算同网络技术、信息安全技术应用、大数据技术 等，理工科专业",
+     "address": "浙江省余姚市中意宁波生态园滨海大道60号",
+     "internPay": "6K~7K/包吃住/报销交通费",
+     "regularPay": "7K~9K",
+     "type": "产线/技术员",
+     "region": "宁波",
+     "internPayValue": 6500,
+     "regularPayValue": 8000
+    }
+   ]
+  },
+  {
+   "name": "蜂巢能源科技股份有限公司",
+   "contact": "刘伟",
+   "phone": "15305650111",
+   "region": "南京",
+   "jobs": [
+    {
+     "title": "生产运营储备岗、质量技术员、工艺技术员、设备技术员、物流员、",
+     "headcount": 150,
+     "major": "理工类专业均可",
+     "address": "江苏：常州（总部）、南京、盐城、泰州、\n浙江：湖州、\n安徽：马鞍山\n四川：遂宁、成都\n湖北：大冶",
+     "internPay": "6K-8K",
+     "regularPay": "7K-9K",
+     "type": "运营/客服/销售",
+     "region": "南京",
+     "internPayValue": 7000,
+     "regularPayValue": 8000
+    }
+   ]
+  },
+  {
+   "name": "长沙市睿思达企业管理有限公司",
+   "contact": "郭毅舟",
+   "phone": "18820220714",
+   "region": "其他",
+   "jobs": [
+    {
+     "title": "新佳宜门店营运实习生",
+     "headcount": 30,
+     "major": "不限",
+     "address": "新佳宜门店就近安排",
+     "internPay": "3500~4200/月",
+     "regularPay": "4000-5000元/月",
+     "type": "其他",
+     "region": "其他",
+     "internPayValue": 3850,
+     "regularPayValue": 4500
+    }
+   ]
+  },
+  {
+   "name": "长沙润生智匠科技有限公司",
+   "contact": "张熠",
+   "phone": "18514741125",
+   "region": "长沙",
+   "jobs": [
+    {
+     "title": "3D建模实习生",
+     "headcount": 50,
+     "major": "动漫制作技术",
+     "address": "湖南省长沙市开福区玄森星娱（中国）影视动画集团",
+     "internPay": "面议",
+     "regularPay": "面议",
+     "type": "建模/设计",
+     "region": "长沙",
+     "internPayValue": null,
+     "regularPayValue": null
+    }
+   ]
+  },
+  {
+   "name": "阿凡达（湖南）科技有限公司",
+   "contact": "吕杰",
+   "phone": "13677320215",
+   "region": "湘潭",
+   "jobs": [
+    {
+     "title": "测试工程师",
+     "headcount": 5,
+     "major": "人工智能应用技术",
+     "address": "湖南省湘潭市岳塘区中国•昭山示范区三医创新中心一期研发楼1楼&2楼",
+     "internPay": "1500/月",
+     "regularPay": "4000/月",
+     "type": "测试",
+     "region": "湘潭",
+     "internPayValue": 1500,
+     "regularPayValue": 4000
+    }
+   ]
+  },
+  {
+   "name": "上汽大众汽车有限公司宁波分公司",
+   "contact": "邹明",
+   "phone": "17752866665",
+   "region": "宁波",
+   "jobs": []
+  },
+  {
+   "name": "上海羿铁轨道交通有限公司",
+   "contact": "陈超",
+   "phone": "19891603759",
+   "region": "上海",
+   "jobs": []
+  },
+  {
+   "name": "东莞市翔通光电技术有限公司",
+   "contact": "曾欣",
+   "phone": "18921251996",
+   "region": "东莞",
+   "jobs": []
+  },
+  {
+   "name": "东莞泽遥电子有限责任公司",
+   "contact": "李杰",
+   "phone": "18608403322",
+   "region": "东莞",
+   "jobs": []
+  },
+  {
+   "name": "中国核工业二三建设有限公司南方分公司",
+   "contact": "张国林",
+   "phone": "13316005497",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "义乌市言睿网络科技有限公司",
+   "contact": "金可心",
+   "phone": "15336909781",
+   "region": "义乌",
+   "jobs": []
+  },
+  {
+   "name": "乐刻私教馆",
+   "contact": "刘万万",
+   "phone": "19386638897",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "九芝堂(牡丹江)友搏生物科技有限公司",
+   "contact": "刘沛",
+   "phone": "15574344198",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "信维电子科技（益阳）有限公司",
+   "contact": "苗良俊",
+   "phone": "18890387470",
+   "region": "益阳",
+   "jobs": []
+  },
+  {
+   "name": "北京恒安卫士保安服务有限公司",
+   "contact": "刘慧钢",
+   "phone": "13811260015",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "北汽蓝谷麦格纳汽车有限公司",
+   "contact": "章梦",
+   "phone": "17770084089",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "南亚新材料科技(江西)有限公司",
+   "contact": "邢超杰",
+   "phone": "13316408356",
+   "region": "江西",
+   "jobs": []
+  },
+  {
+   "name": "奇瑞新能源汽车股份有限公司",
+   "contact": "程静",
+   "phone": "13655552190",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "娄底市毅诚建筑工程有限公司",
+   "contact": "朱米娜",
+   "phone": "17373848081",
+   "region": "娄底",
+   "jobs": []
+  },
+  {
+   "name": "宁波环球广电科技有限公司",
+   "contact": "刘伟",
+   "phone": "18505690518",
+   "region": "宁波",
+   "jobs": []
+  },
+  {
+   "name": "安徽省交铁航空商务服务有限公司",
+   "contact": "索晨鑫",
+   "phone": "18039250316",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "山东建勘集团有限公司",
+   "contact": "王子叶",
+   "phone": "18049401631",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "岳阳汇川技术有限公司",
+   "contact": "",
+   "phone": "18961956158",
+   "region": "岳阳",
+   "jobs": []
+  },
+  {
+   "name": "广东中保保安服务有限公司",
+   "contact": "林伟强",
+   "phone": "15919881211",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "广东英维克技术有限公司",
+   "contact": "",
+   "phone": "",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "广州奥鑫通讯设备有限公司",
+   "contact": "赵生",
+   "phone": "16670445296",
+   "region": "广州",
+   "jobs": []
+  },
+  {
+   "name": "广州康睿祥商贸有限公司",
+   "contact": "魏敏舟",
+   "phone": "17375854542",
+   "region": "广州",
+   "jobs": []
+  },
+  {
+   "name": "惠州博源电源有限公司",
+   "contact": "罗兵",
+   "phone": "13317941517",
+   "region": "惠州",
+   "jobs": []
+  },
+  {
+   "name": "惠州海弘科技有限公司",
+   "contact": "刘乔",
+   "phone": "17267374252",
+   "region": "惠州",
+   "jobs": []
+  },
+  {
+   "name": "无锡鑫巨宏智能科技股份有限公司",
+   "contact": "胡冰",
+   "phone": "19123419134",
+   "region": "无锡",
+   "jobs": []
+  },
+  {
+   "name": "昂纳科技（深圳）集团股份有限公司",
+   "contact": "王同通",
+   "phone": "13669584780",
+   "region": "深圳",
+   "jobs": []
+  },
+  {
+   "name": "杭州三盛众合餐饮管理有限公司",
+   "contact": "陈培祥",
+   "phone": "18513034565",
+   "region": "杭州",
+   "jobs": []
+  },
+  {
+   "name": "杭州春客网络科技有限公司",
+   "contact": "",
+   "phone": "15093840083",
+   "region": "杭州",
+   "jobs": []
+  },
+  {
+   "name": "杭州聚学电子商务有限公司",
+   "contact": "",
+   "phone": "18638777938",
+   "region": "杭州",
+   "jobs": []
+  },
+  {
+   "name": "武汉新远洋海事服务有限公司",
+   "contact": "赵玉龙",
+   "phone": "18071058833",
+   "region": "武汉",
+   "jobs": []
+  },
+  {
+   "name": "武汉锐进铁路科技股份有限公司",
+   "contact": "朱德权",
+   "phone": "18182624330",
+   "region": "武汉",
+   "jobs": []
+  },
+  {
+   "name": "江苏勤善堂健康产业有限公司",
+   "contact": "陆倩倩",
+   "phone": "15005190829",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "江苏屹蒙智能科技有限公司",
+   "contact": "张爱妮",
+   "phone": "18149377547",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "江苏新京武体育文化有限公司",
+   "contact": "赵川栋",
+   "phone": "17612929285",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "河南艾威生消安科技集团有限公司",
+   "contact": "王亚芳",
+   "phone": "18538798572",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "深圳市乐有家控股集团有限公司",
+   "contact": "邢丹丹",
+   "phone": "15012921127",
+   "region": "深圳",
+   "jobs": []
+  },
+  {
+   "name": "深圳市名雕装饰股份有限公司",
+   "contact": "王桂林",
+   "phone": "19166217162",
+   "region": "深圳",
+   "jobs": []
+  },
+  {
+   "name": "深圳市大明方圆服务有限公司长沙黄花国际机场T2分公司",
+   "contact": "张吉敏",
+   "phone": "18328564149",
+   "region": "长沙",
+   "jobs": []
+  },
+  {
+   "name": "深圳市新贝田航空科技有限公司",
+   "contact": "王怡",
+   "phone": "13410346241",
+   "region": "深圳",
+   "jobs": []
+  },
+  {
+   "name": "深圳市银雁科技有限公司长沙分公司",
+   "contact": "杨文颖",
+   "phone": "13467572894",
+   "region": "长沙",
+   "jobs": []
+  },
+  {
+   "name": "深圳柏氏茶业有限公司",
+   "contact": "王硕",
+   "phone": "18872285560",
+   "region": "深圳",
+   "jobs": []
+  },
+  {
+   "name": "深圳欣嘉科轨道交通科技有限公司",
+   "contact": "胡伟聪",
+   "phone": "18675648688",
+   "region": "深圳",
+   "jobs": []
+  },
+  {
+   "name": "深圳百果园实业（集团）股份有限公司",
+   "contact": "张圳欣",
+   "phone": "18312487678",
+   "region": "深圳",
+   "jobs": []
+  },
+  {
+   "name": "深圳百沃彰世科技有限公司",
+   "contact": "韩足",
+   "phone": "18577045058",
+   "region": "深圳",
+   "jobs": []
+  },
+  {
+   "name": "深科技（东莞长城开发科技有限公司）\n东莞长城开发科技有限公司",
+   "contact": "卢荷花",
+   "phone": "13075202555",
+   "region": "东莞",
+   "jobs": []
+  },
+  {
+   "name": "温州兰立方酒店投资管理有限公司",
+   "contact": "郭虎东",
+   "phone": "13968882937",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "湖北俊才星传媒有限公司",
+   "contact": "陈丽",
+   "phone": "13338659337",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "湖南京邦达物流科技有限公司",
+   "contact": "刘念",
+   "phone": "19316754339",
+   "region": "南京",
+   "jobs": []
+  },
+  {
+   "name": "湖南博载科技有限公司",
+   "contact": "李潇",
+   "phone": "15700701805",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "湖南友谊阿波罗商业股份有限公司",
+   "contact": "范萍",
+   "phone": "13974967287",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "湖南唯诺工程技术有限公司",
+   "contact": "付云",
+   "phone": "133974055480",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "湖南大德峰上装饰有限公司",
+   "contact": "胡宇洁",
+   "phone": "13975114225",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "湖南尊品文化传播有限公司",
+   "contact": "张静",
+   "phone": "19894363956",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "湖南小翅科技有限公司",
+   "contact": "吴静",
+   "phone": "15882680826",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "湖南康悦酒店管理有限公司",
+   "contact": "黄涛",
+   "phone": "18774012473",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "湖南捷西整体家居有限公司",
+   "contact": "邵波",
+   "phone": "18774051992",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "湖南新湘瑞信暖通科技有限公司",
+   "contact": "朱娇",
+   "phone": "18374834449",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "湖南新骏保安服务有限公司",
+   "contact": "王莎",
+   "phone": "13755191565",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "湖南未下山滨江餐饮管理有限公司",
+   "contact": "欧凤美",
+   "phone": "18073102142",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "湖南湘江城市运营管理有限公司",
+   "contact": "张苹",
+   "phone": "15200918280",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "湖南溢泽生物科技有限公司",
+   "contact": "彭晓",
+   "phone": "15575859747",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "湖南点石家居装饰集团有限公司",
+   "contact": "徐婷",
+   "phone": "17673600551",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "湖南省元翼智飞通用航空科技有限公司",
+   "contact": "刘喜玲",
+   "phone": "18684999922",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "湖南省唐羽茶业有限公司",
+   "contact": "冯红",
+   "phone": "19067129197",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "湖南省国泰君安保安服务有限公司",
+   "contact": "覃炳烨",
+   "phone": "19572990429",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "湖南省得才教育科技有限公司",
+   "contact": "何花老师",
+   "phone": "18007487087",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "湖南竹海堂医疗科技集团股份有限公司",
+   "contact": "何曦",
+   "phone": "18207329627",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "湖南红黄蓝教育发展有限公司",
+   "contact": "熊姣",
+   "phone": "17773141006",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "湖南翼腾教育科技有限公司",
+   "contact": "高懿昀",
+   "phone": "19376977313",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "湖南逸星文化传媒有限公司",
+   "contact": "李正义",
+   "phone": "18569068862",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "湖南逸达行高铁商务旅行服务有限公司",
+   "contact": "周文佳",
+   "phone": "13272442085",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "湖南金拱门食品有限公司",
+   "contact": "文利",
+   "phone": "13808417652",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "湖南金空间装饰工程有限公司",
+   "contact": "肖治萱",
+   "phone": "15802564493",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "湖南金钢云科保安服务有限公司",
+   "contact": "雷经理",
+   "phone": "18874075354",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "湖南陆德企业管理有限公司",
+   "contact": "张睿",
+   "phone": "18669030290",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "湖南香瑞东家乐建筑装饰设计工程有限公司",
+   "contact": "王晓晴",
+   "phone": "17742657186",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "珠海保税区光联通讯技术有限公司",
+   "contact": "何健",
+   "phone": "18124349266",
+   "region": "珠海",
+   "jobs": []
+  },
+  {
+   "name": "绿清生活服务深圳有限公司",
+   "contact": "蔡燕珊",
+   "phone": "13728709632",
+   "region": "深圳",
+   "jobs": []
+  },
+  {
+   "name": "老铺黄金股份有限公司",
+   "contact": "吴海芹",
+   "phone": "1867307137",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "舜宇集团有限公司",
+   "contact": "郑袁",
+   "phone": "13429263515",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "芯联集成电路制造股份有限公司",
+   "contact": "胡先生",
+   "phone": "15656010396",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "苏州相城立讯精工有限公司",
+   "contact": "杜永明",
+   "phone": "13511615876",
+   "region": "苏州",
+   "jobs": []
+  },
+  {
+   "name": "蔚来汽车(安徽)有限公司",
+   "contact": "陶心愿",
+   "phone": "18656959860",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "郑州铁鹰铁路保安服务有限公司深圳分公司",
+   "contact": "唐传奇",
+   "phone": "15113839984",
+   "region": "深圳",
+   "jobs": []
+  },
+  {
+   "name": "金泓（湖南）控股集团有限公司",
+   "contact": "莫玲",
+   "phone": "13637475076",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "长沙万达文华酒店",
+   "contact": "宋小雨",
+   "phone": "15111002726",
+   "region": "长沙",
+   "jobs": []
+  },
+  {
+   "name": "长沙三电蜂教育科技有限公司",
+   "contact": "付博",
+   "phone": "19090894401",
+   "region": "长沙",
+   "jobs": []
+  },
+  {
+   "name": "长沙世界之窗有限公司",
+   "contact": "卢阳",
+   "phone": "18390861662",
+   "region": "长沙",
+   "jobs": []
+  },
+  {
+   "name": "长沙二梨互联网科技有限公司",
+   "contact": "黄鼎夫",
+   "phone": "18508441199",
+   "region": "长沙",
+   "jobs": []
+  },
+  {
+   "name": "长沙北辰房地产开发有限公司会展分公司",
+   "contact": "张晔煊",
+   "phone": "18569477731",
+   "region": "长沙",
+   "jobs": []
+  },
+  {
+   "name": "长沙北辰房地产开发有限公司北辰洲际酒店",
+   "contact": "樊馥鑫",
+   "phone": "18163719211",
+   "region": "长沙",
+   "jobs": []
+  },
+  {
+   "name": "长沙城发物业管理有限公司",
+   "contact": "罗欢",
+   "phone": "15700757566",
+   "region": "长沙",
+   "jobs": []
+  },
+  {
+   "name": "长沙威廉古堡科技有限公司",
+   "contact": "涂成龙",
+   "phone": "19313158587",
+   "region": "长沙",
+   "jobs": []
+  },
+  {
+   "name": "长沙学思乐教教育科技有限公司",
+   "contact": "王权",
+   "phone": "15773151586",
+   "region": "长沙",
+   "jobs": []
+  },
+  {
+   "name": "长沙市一鸣体育有限公司",
+   "contact": "吴鸣",
+   "phone": "17763606757",
+   "region": "长沙",
+   "jobs": []
+  },
+  {
+   "name": "长沙市天心区启卓·首府幼儿园",
+   "contact": "曾小雨",
+   "phone": "13677494843",
+   "region": "长沙",
+   "jobs": []
+  },
+  {
+   "name": "长沙市青麟互娱文化传媒有限公司",
+   "contact": "段彦",
+   "phone": "13647412850",
+   "region": "长沙",
+   "jobs": []
+  },
+  {
+   "name": "长沙旭阳健康管理有限公司",
+   "contact": "范勇",
+   "phone": "18229854052",
+   "region": "长沙",
+   "jobs": []
+  },
+  {
+   "name": "长沙星星之火旅行社有限公司",
+   "contact": "汤建文",
+   "phone": "13367429988",
+   "region": "长沙",
+   "jobs": []
+  },
+  {
+   "name": "长沙湘麓山庄有限公司",
+   "contact": "李笑笑",
+   "phone": "15207315658",
+   "region": "长沙",
+   "jobs": []
+  },
+  {
+   "name": "长沙牧宸聚星文化传媒有限公司",
+   "contact": "李高源",
+   "phone": "19918855550",
+   "region": "长沙",
+   "jobs": []
+  },
+  {
+   "name": "长沙田沁文化传媒有限公司",
+   "contact": "孙梦露",
+   "phone": "13548755020",
+   "region": "长沙",
+   "jobs": []
+  },
+  {
+   "name": "长沙研课优学教育科技有限公司",
+   "contact": "蒋礼兵",
+   "phone": "17373132566",
+   "region": "长沙",
+   "jobs": []
+  },
+  {
+   "name": "长沙腾旭文化传媒有限公司",
+   "contact": "吉磊",
+   "phone": "18163601230",
+   "region": "长沙",
+   "jobs": []
+  },
+  {
+   "name": "长沙蓓康僖营养品有限公司",
+   "contact": "李艳",
+   "phone": "18670776395",
+   "region": "长沙",
+   "jobs": []
+  },
+  {
+   "name": "长沙诚茶煜姑娘茶业有限公司",
+   "contact": "阮晚怡",
+   "phone": "18776392790",
+   "region": "长沙",
+   "jobs": []
+  },
+  {
+   "name": "长沙鸣洲文化传播有限公司",
+   "contact": "黄仁",
+   "phone": "15211030719",
+   "region": "长沙",
+   "jobs": []
+  },
+  {
+   "name": "长生美家",
+   "contact": "李巍",
+   "phone": "17872325807",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "陕西机场安保",
+   "contact": "",
+   "phone": "13298127047",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "首都实业投资有限公司",
+   "contact": "杜学谦",
+   "phone": "18225511152",
+   "region": "其他",
+   "jobs": []
+  },
+  {
+   "name": "鹏祥智慧保安有限公司",
+   "contact": "刘辉",
+   "phone": "15942634299",
+   "region": "其他",
+   "jobs": []
+  }
+ ]
+}
