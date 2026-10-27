@@ -16,3 +16,8 @@ tsconfig.tsbuildinfo
 
 # test build output
 /.test-build/
+
+# python 接口测试产物
+__pycache__/
+.pytest_cache/
+tests/api/report.html
